@@ -8,5 +8,18 @@ import { ApiService } from '../service/api.service';
   styleUrls: ['./personaje.component.scss'],
 })
 export class PersonajeComponent {
-  
+  personaje: any;
+
+  constructor(private route: ActivatedRoute, private apiService: ApiService) {}
+
+  ngOnInit(): void {
+    const id = Number(this.route.snapshot.paramMap.get('id'));
+    console.log('ID recibido:', id);
+
+    this.apiService.getDataId(id).subscribe((response) => {
+      console.log('Personaje:', response);
+      this.personaje = response;
+    });
+  }
+
 }

@@ -1,1 +1,23 @@
-<p>prueba</p>
+<div class="container mt-5" *ngIf="personaje">
+  <div class="row justify-content-center">
+    <div class="col-12 col-sm-10 col-md-6 col-lg-4">
+      <div class="card shadow">
+        <img
+          class="card-img-top img-fluid"
+          [src]="personaje.image"
+          alt="Imagen personaje"
+        />
+
+        <div class="card-body text-center">
+          <h4 class="card-title">{{ personaje.name }}</h4>
+
+          <p class="mb-1"><b>Especie:</b> {{ personaje.species }}</p>
+          <p class="mb-1"><b>Género:</b> {{ personaje.gender }}</p>
+          <p class="mb-3"><b>Origen:</b> {{ personaje.origin.name }}</p>
+
+          <button routerLink="/" class="btn btn-primary w-100">Volver</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

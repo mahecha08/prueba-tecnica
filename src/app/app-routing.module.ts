@@ -4,7 +4,13 @@ import { InicioComponent } from './inicio/inicio.component';
 import { PersonajeComponent } from './personaje/personaje.component';
 
 const routes: Routes = [
-  
+  {
+    path: '',
+    component: InicioComponent,
+  },
+
+  { path: 'personaje/:id', component: PersonajeComponent },
+
 ];
 
 @NgModule({

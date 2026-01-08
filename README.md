@@ -21,7 +21,8 @@ La aplicación consume una API pública y muestra información de forma clara y 
 
 La aplicación consume la API pública de Rick and Morty:
 
-https://rickandmortyapi.com/
+sitio/documentacion: https://rickandmortyapi.com/
+api: https://rickandmortyapi.com/api/character/
 
 esta api la utlice debido a no trae tantos datos, es algo diferente y es publica
 
@@ -32,6 +33,16 @@ Funcionalidades principales:
 - Navegación a un detalle del personaje
 - Vista responsive y centrada
 - Consumo de API mediante un servicio (`ApiService`)
+
+---
+
+## EJECUCCIUON DEL PROYECTO
+
+- clonar repositorio : https://github.com/mahecha08/prueba-tecnica
+
+- instalar dependencias: npm install
+
+- ejecutar proyecto: npm start
 
 ---
 
@@ -60,10 +71,3 @@ ng test --code-coverage
 
 
 
-## EJECUCCIUON DEL PROYECTO
-
-- clonar repositorio : https://github.com/mahecha08/prueba-tecnica
-
-- instalar dependencias: npm install
-
-- ejecutar proyecto: npm start

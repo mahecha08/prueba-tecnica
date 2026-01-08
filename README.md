@@ -1,27 +1,69 @@
-# Prueba
+# Prueba Técnica Frontend – Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.11.
+Buen dia personal de LinkTec, el proyecto frontend desarrollado fue en Angular como parte de una prueba técnica
 
-## Development server
+La aplicación consume una API pública y muestra información de forma clara y organizada, aplicando buenas prácticas básicas de desarrollo frontend.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+---
 
-## Code scaffolding
+## Tecnologías usadas
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Angular version 15 (elegida porque la he utilizado)
+- TypeScript
+- HTML5
+- CSS3 / Bootstrap
+- Angular Router
+- Git y GitHub
 
-## Build
+---
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Descripción del proyecto
 
-## Running unit tests
+La aplicación consume la API pública de Rick and Morty:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+https://rickandmortyapi.com/
 
-## Running end-to-end tests
+esta api la utlice debido a no trae tantos datos, es algo diferente y es publica
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Funcionalidades principales:
 
-## Further help
+- Listado de personajes en una tabla
+- Visualización de información básica (id, nombre, estado)
+- Navegación a un detalle del personaje
+- Vista responsive y centrada
+- Consumo de API mediante un servicio (`ApiService`)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+---
+
+## Estructura del proyecto
+
+- `inicio`: componente que muestra el listado de personajes
+- `personaje`: componente que muestra el detalle de un personaje
+- `ApiService`: servicio encargado de consumir la API
+- `app-routing`: manejo de rutas
+- `app.component`: componente raíz
+
+---
+
+## 🧪 Testing
+
+Se implementaron pruebas unitarias básicas:
+
+- Pruebas de creación de componentes
+- Prueba básica del servicio
+- Cobertura mínima cercana al 30%
+
+Para ejecutar los tests:
+
+```bash
+ng test --code-coverage
+
+
+
+## EJECUCCIUON DEL PROYECTO
+
+- clonar repositorio : https://github.com/mahecha08/prueba-tecnica
+
+- instalar dependencias: npm install
+
+- ejecutar proyecto: npm start
